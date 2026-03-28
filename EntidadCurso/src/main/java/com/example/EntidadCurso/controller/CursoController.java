@@ -10,13 +10,13 @@ public class CursoController {
 
     ArrayList<Curso> lista = new ArrayList<>();
 
-    // GET
+    
     @GetMapping
     public ArrayList<Curso> listar() {
         return lista;
     }
 
-    // POST
+    
     @PostMapping
     public Curso crear(@RequestBody Curso curso) {
         lista.add(curso);
